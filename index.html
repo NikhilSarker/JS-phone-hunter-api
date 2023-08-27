@@ -33,11 +33,29 @@
 
       </div>
       <!-- Show All Button -->
-      <div id="show_all_button_container" class="hidden">
-        <button id="" class="btn btn-accent">Show All</button>
+      <div id="show_all_button_container" class="hidden text-center my-8">
+        <button onclick="handleShowAll()" class="btn btn-accent">Show All</button>
 
       </div>
     </section>
+    <!-- Show details modal  -->
+    <!-- The button to open modal -->
+
+<!-- Open the modal using ID.showModal() method -->
+    
+    <dialog id="show_detail_modal" class="modal modal-bottom sm:modal-middle">
+      <form method="dialog" class="modal-box">
+        <h3 id="show_details_phone_name" class="font-bold text-3xl text-center my-2"></h3>
+        
+        <div id="show_detail_container">
+
+        </div>
+        <div class="modal-action">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="btn bg-[#DC3545;] rounded-lg text-white hover:bg-[#DC3560]">Close</button>
+        </div>
+      </form>
+    </dialog>
 
   </main>
   <footer>
